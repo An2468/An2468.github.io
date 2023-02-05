@@ -1,29 +1,33 @@
-h1 {
-  color: blue;
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for the cells in the table */
+td {
+  width: 50%;
+  height: 200px;
   text-align: center;
-  
+  vertical-align: middle;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/* Style for the cat images */
+.cat {
+  background-image: url("cat1.jpg");
+  background-size: cover;
 }
 
-li {
-  float: left;
+/* Style for the table images */
+.table {
+  background-image: url("table1.jpg");
+  background-size: cover;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
+/* Style for the preview box */
+#preview {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  background-size: cover;
 }
