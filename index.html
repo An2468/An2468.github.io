@@ -1,41 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      /* Style for the table */
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      /* Style for the cells in the table */
-      td {
-        width: 50%;
-        height: 200px;
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      /* Style for the cat images */
-      .cat {
-        background-image: url("coolcattrustme.jpg");
-        background-size: cover;
-      }
-
-      /* Style for the table images */
-      .table {
-        background-image: url("table.jpeg");
-        background-size: cover;
-      }
-
-      /* Style for the preview box */
-      #preview {
-        width: 300px;
-        height: 300px;
-        margin: 20px auto;
-        background-size: cover;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <!-- Table for displaying the cat and table images -->
@@ -55,11 +21,6 @@
     <!-- Preview box for displaying the merged cat and table images -->
     <div id="preview"></div>
 
-    <!-- JavaScript for updating the preview box -->
-    <script>
-      function updatePreview(image) {
-        document.getElementById("preview").style.backgroundImage = "url(" + image + ")";
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
