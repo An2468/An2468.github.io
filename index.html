@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page 1</title>
+    <style>
+      /* Style for the table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      /* Style for the cells in the table */
+      td {
+        width: 50%;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      /* Style for the cat images */
+      .cat {
+        background-image: url("cat1.jpg");
+        background-size: cover;
+      }
+
+      /* Style for the table images */
+      .table {
+        background-image: url("table1.jpg");
+        background-size: cover;
+      }
+
+      /* Style for the preview box */
+      #preview {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Page 1</h1>
-    <p>This is the first page.</p>
-    <a href="page2.html">Go to Page 2</a>
+    <!-- Table for displaying the cat and table images -->
+    <table>
+      <tr>
+        <!-- First row -->
+        <td class="cat" onclick="updatePreview('cat1.jpg')"></td>
+        <td class="table" onclick="updatePreview('table1.jpg')"></td>
+      </tr>
+      <tr>
+        <!-- Second row -->
+        <td class="cat" onclick="updatePreview('cat2.jpg')"></td>
+        <td class="table" onclick="updatePreview('table2.jpg')"></td>
+      </tr>
+    </table>
+
+    <!-- Preview box for displaying the merged cat and table images -->
+    <div id="preview"></div>
+
+    <!-- JavaScript for updating the preview box -->
+    <script>
+      function updatePreview(image) {
+        document.getElementById("preview").style.backgroundImage = "url(" + image + ")";
+      }
+    </script>
   </body>
 </html>
